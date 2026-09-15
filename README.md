@@ -54,7 +54,7 @@ Throughput measured between two units over a 2.5G trunk: **~1.8–1.9 Gbit/s**.
 - **PPE WAN RX FIFO overruns.** Roughly 0.07–0.09 % of packets at ~1.9 Gbit/s.
   No longer the hard ~600 Mbit/s cap earlier builds had, but not zero.
 - **802.11r is incompatible with MLO.** hostapd's FT code has no MLD
-  awareness — do not enable 11r on an MLD SSID. 11k/11v are fine.
+  awareness — do not enable 11r on an MLO SSID. 11k/11v are fine.
 
 ## Building
 
