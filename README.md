@@ -80,8 +80,9 @@ Pre-built reference images are published periodically on the
   (no LuCI, `wpad-basic-mbedtls`) — what you'd get building it yourself with no changes
 - **`ap`** — full config (LuCI, tri-band MLO) plus the FT-over-MLO roaming series; what the
   maintainer's own household runs
-- **`router`** — gateway role: LuCI, PPE hardware flow offload, WireGuard, unbound, chrony,
-  mDNS reflection
+- **`router`** — gateway role: LuCI, software nftables flowtable offload (not silicon-level
+  hardware NAT acceleration — see [issue #1](https://github.com/perceival/openwrt-flint3/issues/1)),
+  WireGuard, unbound, chrony, mDNS reflection
 
 See the disclaimer above before flashing any of them.
 
